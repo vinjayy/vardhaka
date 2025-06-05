@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --brand-navy: #2b328c;
+  --brand-yellow: #faef63;
+  --brand-red: #d5504f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.font-playfair {
+  font-family: var(--font-playfair);
+}
+
+.font-sans {
+  font-family: var(--font-inter);
+}
+
+/* Brand color utilities */
+.bg-brand-navy {
+  background-color: var(--brand-navy);
+}
+
+.bg-brand-yellow {
+  background-color: var(--brand-yellow);
+}
+
+.bg-brand-red {
+  background-color: var(--brand-red);
+}
+
+.text-brand-navy {
+  color: var(--brand-navy);
+}
+
+.text-brand-yellow {
+  color: var(--brand-yellow);
+}
+
+.text-brand-red {
+  color: var(--brand-red);
+}
+
+.border-brand-navy {
+  border-color: var(--brand-navy);
+}
+
+.border-brand-yellow {
+  border-color: var(--brand-yellow);
+}
+
+.border-brand-red {
+  border-color: var(--brand-red);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-navy);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e2470;
+}
+
+/* Gradient backgrounds using brand colors */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-red) 50%, var(--brand-yellow) 100%);
+}
+
+.bg-brand-gradient-soft {
+  background: linear-gradient(
+    135deg,
+    rgba(43, 50, 140, 0.1) 0%,
+    rgba(213, 80, 79, 0.1) 50%,
+    rgba(250, 239, 99, 0.1) 100%
+  );
+}
