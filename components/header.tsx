@@ -72,16 +72,10 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-3">
-            <Button asChild size="sm" className="bg-green-600 hover:bg-green-700 text-white">
-              <a href="https://wa.me/6281413215200" target="_blank" rel="noopener noreferrer">
+            <Button asChild size="sm" className="bg-green-600 hover:bg-green-700 text-white rounded-xl">
+              <a href="https://wa.me/6281316992546" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-4 h-4 mr-2" />
                 WhatsApp
-              </a>
-            </Button>
-            <Button asChild size="sm" className="bg-brand-navy hover:bg-brand-navy/90 text-white">
-              <a href="https://id.shp.ee/w71RPk5" target="_blank" rel="noopener noreferrer">
-                <ShoppingBag className="w-4 h-4 mr-2" />
-                Belanja
               </a>
             </Button>
           </div>
@@ -89,7 +83,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-xl hover:bg-gray-100 transition-colors"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -126,16 +120,10 @@ export default function Header() {
 
               {/* Mobile CTA Buttons */}
               <div className="px-4 pt-4 border-t border-gray-200 space-y-3">
-                <Button asChild className="w-full bg-green-600 hover:bg-green-700 text-white">
+                <Button asChild className="w-full bg-green-600 hover:bg-green-700 text-white rounded-xl">
                   <a href="https://wa.me/6281413215200" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     WhatsApp
-                  </a>
-                </Button>
-                <Button asChild className="w-full bg-brand-navy hover:bg-brand-navy/90 text-white">
-                  <a href="https://id.shp.ee/w71RPk5" target="_blank" rel="noopener noreferrer">
-                    <ShoppingBag className="w-4 h-4 mr-2" />
-                    Belanja Sekarang
                   </a>
                 </Button>
               </div>

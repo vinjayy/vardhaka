@@ -29,14 +29,6 @@ const parfumProducts = [
     suitable: "Aktivitas Harian Hingga Acara Formal",
     image: "/CHANDRIKA.png?height=300&width=300",
   },
-  {
-    name: "Aurora Parfum",
-    type: "Eau de Parfum",
-    character: "Fresh, Citrus, Energik",
-    notes: "Bergamot, Lemon, White Tea, Musk",
-    suitable: "Aktivitas pagi & olahraga",
-    image: "/placeholder.svg?height=300&width=300",
-  },
 ]
 
 const bodyMistProducts = [
@@ -63,14 +55,6 @@ const bodyMistProducts = [
     notes: "Rose Petal, Musk, dan Solar Notes",
     suitable: "Aktivitas Harian Hingga Acara Formal",
     image: "/ROMAN-1.png?height=300&width=300",
-  },
-  {
-    name: "Citrus Burst Body Mist",
-    type: "Body Mist",
-    character: "Energik, Segar, Vibrant",
-    notes: "Orange, Grapefruit, Mint, Green Apple",
-    suitable: "Pagi hari & aktivitas outdoor",
-    image: "/placeholder.svg?height=300&width=300",
   },
 ]
 
@@ -115,7 +99,7 @@ function ProductCard({ product }: { product: any }) {
         <div className="pt-4 space-y-3">
           <div className="grid grid-cols-2 gap-3">
             <Button asChild size="sm" className="bg-green-600 hover:bg-green-700 text-white rounded-xl font-medium">
-              <a href="https://wa.me/6281413215200" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/6281316992546" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-4 h-4 mr-1" />
                 WA
               </a>
@@ -153,7 +137,6 @@ function ProductCard({ product }: { product: any }) {
 export default function Products() {
   return (
     <section className="py-20 lg:py-32 bg-gradient-to-br from-gray-50 via-white to-brand-yellow/5 relative overflow-hidden">
-      {/* Enhanced Background Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 right-20 w-64 h-64 bg-brand-yellow/8 rounded-full blur-3xl animate-pulse"></div>
         <div
@@ -179,7 +162,7 @@ export default function Products() {
         </div>
 
         <Tabs defaultValue="parfum" className="w-full">
-<TabsList className="grid w-full grid-cols-2 max-w-md mx-auto mb-12 bg-gray-100 p-1 rounded-xl h-[60px] items-center">
+          <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto mb-12 bg-gray-100 p-1 rounded-xl h-[60px] items-center">
             <TabsTrigger
               value="parfum"
               className="text-lg font-medium py-3 px-6 rounded-xl data-[state=active]:bg-white data-[state=active]:text-brand-navy data-[state=active]:shadow-sm text-gray-600 transition-all duration-300"
@@ -195,23 +178,26 @@ export default function Products() {
           </TabsList>
 
           <TabsContent value="parfum" className="mt-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-              {parfumProducts.map((product, index) => (
-                <ProductCard key={index} product={product} />
-              ))}
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-6xl">
+                {parfumProducts.map((product, index) => (
+                  <ProductCard key={index} product={product} />
+                ))}
+              </div>
             </div>
           </TabsContent>
 
           <TabsContent value="bodymist" className="mt-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-              {bodyMistProducts.map((product, index) => (
-                <ProductCard key={index} product={product} />
-              ))}
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-6xl">
+                {bodyMistProducts.map((product, index) => (
+                  <ProductCard key={index} product={product} />
+                ))}
+              </div>
             </div>
           </TabsContent>
         </Tabs>
 
-        {/* Call to Action */}
         <div className="text-center mt-16">
           <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-brand-navy/10 max-w-4xl mx-auto">
             <h3 className="font-playfair text-2xl font-bold text-brand-navy mb-4">Tidak Menemukan Aroma yang Cocok?</h3>
@@ -222,7 +208,7 @@ export default function Products() {
               asChild
               className="bg-brand-gradient hover:scale-105 text-white px-8 py-3 rounded-2xl font-semibold text-lg shadow-xl transition-all duration-300"
             >
-              <a href="https://wa.me/6281413215200" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/6281316992546" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Konsultasi Gratis
               </a>

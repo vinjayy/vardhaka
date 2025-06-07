@@ -7,8 +7,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-brand-gradient rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg font-playfair">V</span>
+              <div className="w-14 h-14 overflow-hidden rounded-full">
+                <img
+                  src="/logo.png?height=40&width=40"
+                  alt="Vardhaka Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="font-playfair text-2xl font-bold">Vardhaka Store</h3>
             </div>

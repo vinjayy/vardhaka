@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react"
+import { Instagram, MapPin, Phone } from "lucide-react"
 
 export default function Contact() {
   return (
@@ -12,11 +12,18 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="text-center group">
-            <div className="w-16 h-16 bg-brand-yellow rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-              <Mail className="w-8 h-8 text-brand-navy" />
+            <div className="w-16 h-16 bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <Instagram className="w-8 h-8 text-white" />
             </div>
-            <h3 className="font-semibold text-brand-navy mb-2 text-lg">Email</h3>
-            <p className="text-gray-600">vardhakastore@gmail.com</p>
+            <h3 className="font-semibold text-brand-navy mb-2 text-lg">Instagram</h3>
+            <a
+              href="https://www.instagram.com/vardhaka_solstice?igsh=NmYzMzN0azRlYThn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-brand-navy transition-colors"
+            >
+              @vardhaka_solstice
+            </a>
           </div>
 
           <div className="text-center group">
@@ -24,7 +31,7 @@ export default function Contact() {
               <Phone className="w-8 h-8 text-green-600" />
             </div>
             <h3 className="font-semibold text-brand-navy mb-2 text-lg">WhatsApp</h3>
-            <p className="text-gray-600">+62 814 1321 5200</p>
+            <p className="text-gray-600">+62 813 16992546</p>
           </div>
 
           <div className="text-center group">
